@@ -1,7 +1,7 @@
 "use client";
 
-import AboutPage from "@/app/about/page";
 import Typewriter from "typewriter-effect";
+import About from "./About";
 
 const Banner = () => {
   return (
@@ -12,7 +12,7 @@ const Banner = () => {
         className="w-48 h-48 rounded-full "
       />
 
-      <h1 className="text-5xl font-bold text-[#ff3131] banner">
+      <h1 className="text-5xl font-bold text-[#ff7a29] banner">
         <span className="text-[#333]">
           Bienvenue sur mon Portfolio,
           <br />
@@ -32,7 +32,7 @@ const Banner = () => {
           }}
         />
       </h1>
-      <AboutPage />
+      <About />
     </div>
   );
 };
