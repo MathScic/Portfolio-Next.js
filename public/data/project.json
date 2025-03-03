@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Liste Marvel ",
+    "image": "images/marvel-banner.png",
+    "url": "https://my-marvel-list.netlify.app",
+    "github": "https://github.com/MathScic/Liste-Marvel",
+    "technologies": ["React, NodeJS, API rest"],
+    "description": "Projet React Marvel-List"
+  },
+
+  {
+    "title": "Brasserie de la mer",
+    "image": "images/Brasseriedelamer.png",
+    "url": "https://brasserie-de-la-mer.netlify.app/",
+    "github": "",
+    "technologies": ["React, NodeJS"],
+    "description": "Voici le site (fictif) de la Brasserie de la mer, Brasserie traditionnel depuis plus de 27ans. Coder avec React et Node.js"
+  }
+]

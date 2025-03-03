@@ -27,7 +27,7 @@ const Navbar = () => {
           <li>
             <Link
               href="/about"
-              className="flex items-center px-6 py-3 rounded-full hover:text-[#ff7a29] hover:bg-[#ffd1b3] font-semi-bold"
+              className="flex items-center px-6 py-3 rounded-full text-[#ff7a29] hover:text-[#ffd1b3] font-semi-bold"
             >
               <IoPersonSharp className="mr-2" />
               <span>A propos</span>
@@ -36,7 +36,7 @@ const Navbar = () => {
           <li>
             <Link
               href="/projects"
-              className="flex items-center px-6 py-3 rounded-full hover:text-[#ff7a29] hover:bg-[#ffd1b3] font-semi-bold"
+              className="flex items-center px-6 py-3 rounded-full  text-[#ff7a29] hover:text-[#ffd1b3]  font-semi-bold"
             >
               <FaLaptopCode className="mr-2" />
               <span>Projets</span>
@@ -45,7 +45,7 @@ const Navbar = () => {
           <li>
             <Link
               href="/contact"
-              className="flex items-center px-6 py-3 rounded-full hover:text-[#ff7a29] hover:bg-[#ffd1b3] font-semi-bold"
+              className="flex items-center px-6 py-3 rounded-full text-[#ff7a29] hover:text-[#ffd1b3] font-semi-bold"
             >
               <IoIosMail className="mr-2" />
               <span>Contact</span>
