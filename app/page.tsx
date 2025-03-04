@@ -6,7 +6,6 @@ import Valor from "@/components/Valor";
 import { useInView } from "react-intersection-observer";
 import ContactForm from "@/components/ContactForm";
 import ProjectCard from "@/components/ProjectCard";
-import Link from "next/link";
 
 export default function Home() {
   // Observer pour la section Banner

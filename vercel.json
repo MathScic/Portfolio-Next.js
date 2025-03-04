@@ -1,13 +1,3 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node"
-    }
-  ],
-  "build": {
-    "env": {
-      "NPM_FLAGS": "--legacy-peer-deps"
-    }
-  }
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }

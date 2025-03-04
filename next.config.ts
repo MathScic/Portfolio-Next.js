@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true, // Active le mode strict pour React
-  swcMinify: true, // Optimise la taille du code
+  output: "standalone", // Important si tu utilises SSR
+  trailingSlash: true, // Essaye de voir si ça aide
 };
 
 export default nextConfig;
