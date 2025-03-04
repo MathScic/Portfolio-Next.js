@@ -18,7 +18,7 @@ const Navbar = () => {
         <Link href="/">
           <h1 className="flex items-center gap-4 text-xl text-[#ff7a29] font-bold hover:scale-110 transition duration-300 cursor-pointer whitespace-nowrap">
             <img
-              src="images/logo.png"
+              src="/images/logo.png"
               alt="Logo MS Digital"
               className="w-[80px] h-[50px]"
             />

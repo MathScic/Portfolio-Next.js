@@ -1,7 +1,7 @@
 [
   {
     "title": "Liste Marvel ",
-    "image": "images/marvel-banner.png",
+    "image": "/images/marvel-banner.png",
     "url": "https://my-marvel-list.netlify.app",
     "github": "https://github.com/MathScic/Liste-Marvel",
     "technologies": ["React, NodeJS, API rest"],
@@ -10,7 +10,7 @@
 
   {
     "title": "Brasserie de la mer",
-    "image": "images/Brasseriedelamer.png",
+    "image": "/images/Brasseriedelamer.png",
     "url": "https://brasserie-de-la-mer.netlify.app/",
     "github": "",
     "technologies": ["React, NodeJS"],
