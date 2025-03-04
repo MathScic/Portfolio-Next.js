@@ -11,14 +11,29 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full p-4 bg-[#f5f5f5] flex justify-between items-center px-12 sm:px-24 ">
-      <div className="w-[80%] mx-auto flex justify-between items-center px-12 sm:px-24 text-[#333]">
+    <nav className="w-full p-4 bg-[#f5f5f5] flex items-center px-0  ">
+      <div className="w-[100%] sm:w-[70%] pl-2 pr-2 mx-auto flex justify-between items-center text-[#333]">
+        {/* Logo et H1 alignés à gauche */}
         <Link href="/">
-          <h1 className="text-xl text-[#ff7a29] font-bold hover:scale-110 transition duration-300 cursor-pointer">
+          <h1 className="flex items-center gap-4 text-xl text-[#ff7a29] font-bold hover:scale-110 transition duration-300 cursor-pointer whitespace-nowrap">
+            <img
+              src="images/logo.png"
+              alt="Logo MS Digital"
+              className="w-[80px] h-[50px]"
+            />
             Mathieu Scicluna
           </h1>
         </Link>
 
+        {/* Navigation Menu (affichage mobile) */}
+        <div className="sm:hidden flex items-center w-full justify-between pl-4 pr-4">
+          {/* Le burger icon collé à droite avec un padding */}
+          <button onClick={() => setMenuOpen(!menuOpen)} className="ml-auto">
+            <GiHamburgerMenu className="w-6 h-6" />
+          </button>
+        </div>
+
+        {/* Menu Desktop (affichage grand écran) */}
         <ul
           className={`${
             menuOpen ? "block" : "hidden"
@@ -52,12 +67,6 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-      </div>
-
-      <div className="sm:hidden flex items-center text-[#333]">
-        <button onClick={() => setMenuOpen(!menuOpen)}>
-          <GiHamburgerMenu className="w-6 h-6" />
-        </button>
       </div>
     </nav>
   );
