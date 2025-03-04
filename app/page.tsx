@@ -84,6 +84,7 @@ export default function Home() {
                 description="Voici le site (fictif) de la Brasserie de la mer, Brasserie traditionnel depuis plus de 27ans. Coder avec React et Node.js"
                 technologies={["React", "NodeJs"]}
                 imageUrl="images/Brasseriedelamer.png"
+                githubLink=""
                 siteLink="https://brasserie-de-la-mer.netlify.app/"
               />
             </div>

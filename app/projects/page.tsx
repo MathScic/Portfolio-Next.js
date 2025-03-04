@@ -20,7 +20,7 @@ export default function Project() {
 
   const filteredProject = filteredTech
     ? projects.filter((project) =>
-        project.technologies.some((tech) => tech.includes(filteredTech))
+        project.technologies.some((tech: string) => tech.includes(filteredTech))
       )
     : projects;
 
