@@ -2,7 +2,7 @@ import { FaLightbulb, FaRocket, FaUsers } from "react-icons/fa";
 
 export default function Valor() {
   return (
-    <section className="text-center py-16 mx-auto lg:px-8">
+    <section className="text-center py-16 mx-auto lg:px-8 w-full ">
       <h2 className="text-3xl font-bold text-[#333] mb-4">
         Ce que je vous propose
       </h2>
@@ -10,9 +10,10 @@ export default function Valor() {
         Les valeurs qui définissent mon approche du développement web.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 max-w-5xl mx-auto">
+      {/* Grid contenant les cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-8 w-[80%] mx-auto">
         {/* Partage & Communication */}
-        <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center w-[350px] h-[250px]">
+        <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center w-[350px] h-[250px] mx-auto">
           <div className="flex items-center mb-4">
             <FaUsers className="text-[#ff7a29] text-3xl mr-4" />
             <h3 className="text-xl font-semibold text-[#ff7a29]">
@@ -27,7 +28,7 @@ export default function Valor() {
         </div>
 
         {/* Apprentissage & Adaptabilité */}
-        <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center w-[350px] h-[250px]">
+        <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center w-[350px] h-[250px] mx-auto">
           <div className="flex items-center mb-4">
             <FaLightbulb className="text-[#ff7a29] text-3xl mr-4" />
             <h3 className="text-xl font-semibold text-[#ff7a29]">
@@ -42,7 +43,7 @@ export default function Valor() {
         </div>
 
         {/* Innovation & Créativité */}
-        <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center w-[350px] h-[250px]">
+        <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center w-[350px] h-[250px] mx-auto">
           <div className="flex items-center mb-4">
             <FaRocket className="text-[#ff7a29] text-3xl mr-4" />
             <h3 className="text-xl font-semibold text-[#ff7a29]">

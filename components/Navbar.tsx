@@ -11,7 +11,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full p-4 bg-[#f5f5f5] text-white flex justify-between items-center px-12 sm:px-24">
+    <nav className="w-full p-4 bg-[#f5f5f5] flex justify-between items-center px-12 sm:px-24 ">
       <div className="w-[80%] mx-auto flex justify-between items-center px-12 sm:px-24 text-[#333]">
         <Link href="/">
           <h1 className="text-xl text-[#ff7a29] font-bold hover:scale-110 transition duration-300 cursor-pointer">
@@ -22,12 +22,12 @@ const Navbar = () => {
         <ul
           className={`${
             menuOpen ? "block" : "hidden"
-          } sm:flex sm:space-x-8 sm:block absolute sm:static top-16 left-0 w-full sm:w-auto bg-[#333] sm:bg-transparent transition-all ease-in-out duration-300 p-6 sm:p-0`}
+          } sm:flex sm:space-x-8 absolute sm:static top-16 left-0 w-full sm:w-auto bg-[#333] sm:bg-transparent transition-all ease-in-out duration-300 p-6 sm:p-0`}
         >
           <li>
             <Link
               href="/about"
-              className="flex items-center px-6 py-3 rounded-full text-[#ff7a29] hover:text-[#ffd1b3] font-semi-bold"
+              className="flex items-center px-6 py-3 rounded-full text-[#ff7a29] hover:text-[#ff7a29] border-2 border-transparent hover:bg-[#ffd1b3] transition duration-300"
             >
               <IoPersonSharp className="mr-2" />
               <span>A propos</span>
@@ -36,7 +36,7 @@ const Navbar = () => {
           <li>
             <Link
               href="/projects"
-              className="flex items-center px-6 py-3 rounded-full  text-[#ff7a29] hover:text-[#ffd1b3]  font-semi-bold"
+              className="flex items-center px-6 py-3 rounded-full text-[#ff7a29] hover:text-[#ff7a29] border-2 border-transparent hover:bg-[#ffd1b3] transition duration-300"
             >
               <FaLaptopCode className="mr-2" />
               <span>Projets</span>
@@ -45,7 +45,7 @@ const Navbar = () => {
           <li>
             <Link
               href="/contact"
-              className="flex items-center px-6 py-3 rounded-full text-[#ff7a29] hover:text-[#ffd1b3] font-semi-bold"
+              className="flex items-center px-6 py-3 rounded-full text-[#ff7a29] hover:text-[#ff7a29] border-2 border-transparent hover:bg-[#ffd1b3] transition duration-300"
             >
               <IoIosMail className="mr-2" />
               <span>Contact</span>
@@ -54,7 +54,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="sm:hidden flex items-center text-[#ff3131]">
+      <div className="sm:hidden flex items-center text-[#333]">
         <button onClick={() => setMenuOpen(!menuOpen)}>
           <GiHamburgerMenu className="w-6 h-6" />
         </button>

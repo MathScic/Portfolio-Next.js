@@ -9,7 +9,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className="">
+      <head>
+        <link rel="icon" href="/images/logo.png" />
+        <title>Portfolio Mathieu Scicluna </title>
+      </head>
+      <body className="bg-gradient-to-b from-[#ff9a3d] to-[#f5f5f5]">
         <Navbar />
         {children}
         <Footer />

@@ -1,7 +1,8 @@
 "use client";
 
-import ProjectCard from "@/components/ProjectCard";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Project() {
   const [projects, setProjects] = useState<any[]>([]);
@@ -9,15 +10,14 @@ export default function Project() {
 
   useEffect(() => {
     const loadProject = async () => {
-      const response = await fetch("/data/project.json"); // Assurez-vous que le fichier s'appelle bien 'projects.json' et est dans 'public/'
+      const response = await fetch("/data/project.json");
       const data = await response.json();
-      setProjects(data); // Correction : il faut utiliser 'setProjects' (pluriel)
+      setProjects(data);
     };
 
     loadProject();
   }, []);
 
-  // Filtrage des projets par technologie
   const filteredProject = filteredTech
     ? projects.filter((project) =>
         project.technologies.some((tech) => tech.includes(filteredTech))
@@ -25,17 +25,33 @@ export default function Project() {
     : projects;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#ffc299] to-[#ffffff] flex flex-col">
-      <div className="text-center py-20">
+    <motion.div
+      className="min-h-screen bg-gradient-to-b from-[#ff9a3d] to-[#ffffff] flex flex-col"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      {/* Titre principal */}
+      <motion.div
+        className="text-center py-20"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <h1 className="text-4xl font-bold text-[#333]">Mes réalisations</h1>
         <p className="mt-4 text-xl text-[#333]">
           Vous trouverez ici certaines de mes réalisations, pendant ma formation
           et certains projets pro.
         </p>
-      </div>
+      </motion.div>
 
       {/* Filtre des technologies */}
-      <div className="flex justify-center items-center gap-4 mb-12">
+      <motion.div
+        className="flex justify-center items-center gap-4 mb-12"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.3 }}
+      >
         <p className="font-bold text-2xl text-[#333]">Stack</p>:
         <button
           onClick={() => setFilteredTech("React")}
@@ -55,28 +71,39 @@ export default function Project() {
         >
           Tous
         </button>
-      </div>
+      </motion.div>
 
       {/* Cartes de projets */}
-      <div className="w-[80%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
+      <motion.div
+        className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
         {filteredProject.length > 0 ? (
-          filteredProject.map((project) => (
-            <ProjectCard
+          filteredProject.map((project, index) => (
+            <motion.div
               key={project.title}
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-              imageUrl={project.image}
-              githubLink={project.github}
-              siteLink={project.url}
-            />
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+            >
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                technologies={project.technologies}
+                imageUrl={project.image}
+                githubLink={project.github}
+                siteLink={project.url}
+              />
+            </motion.div>
           ))
         ) : (
           <p className="text-center text-xl text-[#555]">
             Aucun projet à afficher
           </p>
         )}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

@@ -16,7 +16,7 @@ export default function ProjectCard({
   siteLink,
 }: ProjectCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden sm:h-auto sm:w-full md:w-[400px] lg:w-[450px] mb-4">
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden sm:h-auto w-[400px] h-[450px] mb-4 mx-auto ">
       <img
         src={imageUrl}
         alt={title}
