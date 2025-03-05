@@ -69,7 +69,7 @@ export default function Home() {
             </p>
 
             {/* Cartes de projet */}
-            <div className="flex flex-wrap justify-start gap-8 mt-6">
+            <div className="flex flex-wrap text-start gap-8 mt-6">
               <ProjectCard
                 title="Marvel List"
                 description="Voici un projet perso servant a m'entrainer a utiliser React et API Rest ainsi que NodeJS"
