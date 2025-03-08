@@ -23,8 +23,8 @@ const Navbar = () => {
 
   return (
     <nav className="w-full p-4 bg-[#f5f5f5] flex items-center px-0">
-      <div className="w-[100%] sm:w-[70%] pl-2 pr-2 mx-auto flex justify-between items-center text-[#333]">
-        {/* Logo et H1 alignés à gauche */}
+      <div className="w-full lg:w-[80%] xl:w-[70%] pl-2 pr-2 mx-auto flex justify-between items-center text-[#333]">
+        {/* Logo aligné à gauche */}
         <Link href="/">
           <h1 className="flex items-center gap-4 text-xl text-[#ff7a29] font-bold hover:scale-110 transition duration-300 cursor-pointer whitespace-nowrap">
             <img
@@ -115,9 +115,9 @@ const Navbar = () => {
           </ul>
         </motion.div>
 
-        {/* Menu Desktop */}
+        {/* Menu Desktop (tablette et plus large) */}
         <ul className="sm:flex sm:space-x-8 sm:flex-row sm:static sm:bg-transparent hidden">
-          <li>
+          <li className="flex items-center">
             <Link
               href="/about"
               className="flex items-center px-6 py-3 text-[#ff7a29] hover:text-[#ff7a29] border-2 border-transparent hover:bg-[#ffd1b3] hover:rounded-[30px]"
@@ -126,7 +126,7 @@ const Navbar = () => {
               <span>A propos</span>
             </Link>
           </li>
-          <li>
+          <li className="flex items-center">
             <Link
               href="/projects"
               className="flex items-center px-6 py-3 text-[#ff7a29] hover:text-[#ff7a29] border-2 border-transparent hover:bg-[#ffd1b3] hover:rounded-[30px]"
@@ -135,7 +135,7 @@ const Navbar = () => {
               <span>Projets</span>
             </Link>
           </li>
-          <li>
+          <li className="flex items-center">
             <Link
               href="/contact"
               className="flex items-center px-6 py-3 text-[#ff7a29] hover:text-[#ff7a29] border-2 border-transparent hover:bg-[#ffd1b3] hover:rounded-[30px]"

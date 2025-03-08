@@ -5,7 +5,7 @@
     "url": "https://my-marvel-list.netlify.app",
     "github": "https://github.com/MathScic/Liste-Marvel",
     "technologies": ["React, NodeJS, API rest"],
-    "description": "Projet React Marvel-List"
+    "description": "Projet React Marvel-List est un projet perso qui a pour but de trouver les héros marvel dans une barre de recherche. Coder avec React, Node et API rest"
   },
 
   {

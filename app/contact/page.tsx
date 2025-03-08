@@ -11,7 +11,7 @@ export default function ContactPage() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <h1 className="text-4xl font-bold text-[#333] text-center">
+      <h1 className="text-4xl font-bold text-[#333] text-center md:text-center">
         Contactez-moi
       </h1>
 
@@ -21,23 +21,25 @@ export default function ContactPage() {
         N’hésitez pas à me contacter !
       </p>
 
-      <div className="mt-8 flex flex-col md:flex-row gap-12 bg-transparent ">
+      <div className="mt-8 flex xl:flex-row pt-12 md:flex-col gap-12 bg-transparent ">
         <div className="p-6 text-[#333] text-start mt-10">
-          <h2 className="text-2xl font-semibold mb-4">Mes Coordonnées</h2>
-          <p className="mb-10 text-xl">
+          <h2 className="text-2xl font-semibold mb-4 md:text-center">
+            Mes Coordonnées
+          </h2>
+          <p className="mb-10 text-xl md:text-center">
             Vous pouvez me contacter en remplissant le formulaire ou alors
             directement par mail.
           </p>
-          <p className="text-xl mb-4">
+          <p className="text-xl mb-4 md:text-center">
             <strong>Email : </strong>
             <a
               href="mailto:scicluna.mathieu@hotmail.fr"
-              className="text-[#333] hover:text-[#ff7a29]"
+              className="text-[#333] hover:text-[#ff7a29] "
             >
               scicluna.mathieu@hotmail.fr
             </a>
           </p>
-          <p className="text-xl">
+          <p className="text-xl md:text-center">
             <strong>Localisation : </strong>Granville, 50400
           </p>
         </div>

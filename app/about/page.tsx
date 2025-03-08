@@ -44,7 +44,7 @@ export default function AboutPage() {
         transition={{ duration: 1 }}
       >
         <h1 className="text-4xl font-bold text-[#333]">A propos de moi</h1>
-        <p className="mt-4 text-2xl text-[#333] lg:pl-140 lg:pr-140 ">
+        <p className="mt-4 text-2xl text-[#333] xl:w-[50%] xl:mx-auto md:w-[80%] md:mx-auto">
           Passionné par le développement web, j'aime concevoir des interfaces
           modernes et intuitives. Mon objectif est de transformer des idées en
           expériences interactives engageantes. Actuellement, je suis à la
@@ -59,7 +59,7 @@ export default function AboutPage() {
 
       {/* Section Valor */}
       <motion.section
-        className="text-center gap-8 sm:w-[80%] sm:mx-auto"
+        className="text-center gap-8 sm:w-[80%] sm:mx-auto xl:w-[70%]"
         initial={{ opacity: 0 }}
         animate={{ opacity: sectionInView ? 1 : 0 }}
         transition={{ duration: 1 }}
