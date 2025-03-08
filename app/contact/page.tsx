@@ -21,9 +21,9 @@ export default function ContactPage() {
         N’hésitez pas à me contacter !
       </p>
 
-      <div className="mt-8 flex xl:flex-row pt-12 md:flex-col gap-12 bg-transparent ">
-        <div className="p-6 text-[#333] text-start mt-10">
-          <h2 className="text-2xl font-semibold mb-4 md:text-center">
+      <div className="mt-8 flex flex-col xl:flex-row pt-12 md:flex-col gap-12 bg-transparent ">
+        <div className="p-6 text-[#333] text-start mt-10 sm:flex-col">
+          <h2 className="text-2xl font-semibold mb-4 md:text-center sm:text-center">
             Mes Coordonnées
           </h2>
           <p className="mb-10 text-xl md:text-center">
