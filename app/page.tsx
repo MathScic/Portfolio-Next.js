@@ -11,7 +11,7 @@ export default function Home() {
   // Observer pour la section Banner
   const { ref: bannerRef, inView: bannerInView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.2, // Pour rendre l'animation plus rapide, ajuste si nécessaire
   });
 
   // Observer pour la section Valor
@@ -20,19 +20,25 @@ export default function Home() {
     threshold: 0.2,
   });
 
-  // Observer pour la section Valor
+  // Observer pour la section Projet
   const { ref: projectRef, inView: projectInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  // Observer pour la section Contact
+  const { ref: contactRef, inView: contactInView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
 
   return (
     <>
-      <div className="min-h-screen  flex flex-col bg-gradient-to-b from-[#ff9a3d] to-[#f5f5f5]">
+      <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#ff9a3d] to-[#f5f5f5]">
         {/* Section Banner avec animation au scroll */}
         <motion.div
           ref={bannerRef}
-          className="flex flex-col items-center justify-center min-h-screen "
+          className="flex flex-col items-center justify-center min-h-screen"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: bannerInView ? 1 : 0, y: bannerInView ? 0 : 50 }}
           transition={{ duration: 1 }}
@@ -54,7 +60,7 @@ export default function Home() {
         {/* Section Projet avec animation au scroll */}
         <motion.div
           ref={projectRef}
-          className="w-full text-center  py-8"
+          className="w-full text-center py-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: projectInView ? 1 : 0 }}
           transition={{ duration: 1 }}
@@ -69,7 +75,7 @@ export default function Home() {
             </p>
 
             {/* Cartes de projet */}
-            <div className="flex flex-wrap text-start gap-8 mt-6">
+            <div className="flex flex-wrap text-start gap-8 mt-6 ">
               <ProjectCard
                 title="Marvel List"
                 description="Voici un projet perso servant a m'entrainer a utiliser React et API Rest ainsi que NodeJS"
@@ -93,10 +99,10 @@ export default function Home() {
 
         {/* Section Contact avec animation au scroll */}
         <motion.div
-          ref={valorRef}
+          ref={contactRef}
           className="w-full text-center"
           initial={{ opacity: 0 }}
-          animate={{ opacity: valorInView ? 1 : 0 }}
+          animate={{ opacity: contactInView ? 1 : 0 }}
           transition={{ duration: 1 }}
         >
           <ContactForm />

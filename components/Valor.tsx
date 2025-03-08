@@ -11,7 +11,7 @@ export default function Valor() {
       </p>
 
       {/* Grid contenant les cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-8 w-[80%] mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-8 mx-auto">
         {/* Partage & Communication */}
         <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center w-[350px] h-[250px] mx-auto">
           <div className="flex items-center mb-4">
