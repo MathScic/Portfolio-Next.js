@@ -86,12 +86,12 @@ export default function Home() {
               />
 
               <ProjectCard
-                title="Brasserie de la Mer"
-                description="Voici le site (fictif) de la Brasserie de la mer, Brasserie traditionnel depuis plus de 27ans. Coder avec React et Node.js"
-                technologies={["React", "NodeJs"]}
-                imageUrl="/images/Brasseriedelamer.png"
+                title="ForeverCars"
+                description="Voici le site (en développement constant) de l'entreprise de d'achat revente de voiture haut de gammes ForeverCars. Fait avec NextJs et Tailwind"
+                technologies={["NextJS", "NodeJs"]}
+                imageUrl="/images/Small-logo.png"
                 githubLink=""
-                siteLink="https://brasserie-de-la-mer.netlify.app/"
+                siteLink="https://forever-cars-3.vercel.app"
               />
             </div>
           </div>
