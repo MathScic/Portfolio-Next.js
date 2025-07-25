@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Liste Marvel ",
+    "image": "/images/marvel-banner.png",
+    "url": "https://my-marvel-list.netlify.app",
+    "github": "https://github.com/MathScic/Liste-Marvel",
+    "technologies": ["React, NodeJS, API rest"],
+    "description": "Projet React Marvel-List est un projet perso qui a pour but de trouver les héros marvel dans une barre de recherche. Coder avec React, Node et API rest"
+  },
+
+  {
+    "title": "Brasserie de la mer",
+    "image": "/images/Brasseriedelamer.png",
+    "url": "https://brasserie-de-la-mer.netlify.app/",
+    "github": "",
+    "technologies": ["React, NodeJS"],
+    "description": "Voici le site (fictif) de la Brasserie de la mer, Brasserie traditionnel depuis plus de 27ans. Coder avec React et Node.js"
+  },
+  {
+    "title": "ForeverCars",
+    "image": "/images/Small-logo.png",
+    "url": "https://forever-cars-3.vercel.app",
+    "github": "",
+    "technologies": ["NextJS, NodeJS"],
+    "description": "Voici le site (en développement constant) de l'entreprise de d'achat revente de voiture haut de gammes ForeverCars. Fait avec NextJs et Tailwind"
+  },
+  {
+    "title": "Projet React, Formation",
+    "image": "/images/Kasa.png",
+    "url": "https://p8-kasa.netlify.app",
+    "github": "https://github.com/MathScic/P8-Kasa",
+    "technologies": ["React, NodeJS"],
+    "description": "Ce projet avait pour but de nous apprendre à utiliser correctement React pour créer le site vitrine de l'agence de location Kasa. Coder avec React, Node et API rest"
+  }
+]
