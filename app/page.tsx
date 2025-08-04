@@ -95,12 +95,12 @@ export default function Home() {
               />
 
               <ProjectCard
-                title="Kasa"
-                description="Ceci est un projet travailler en formation nous permmettant d'apprendre les bases de React et de l'utilisation des api Rest ainsi que de NodeJS"
-                technologies={["React", "NodeJs"]}
-                imageUrl="/images/Kasa.png"
-                githubLink="https://github.com/MathScic/P8-Kasa"
-                siteLink="https://p8-kasa.netlify.app"
+                title="Mon petit chatBot"
+                description="Voici un projet de mini ChatBot, qui répond à des questions basiques. Coder avec NextJS et Node ainsi que l'API OpenAI"
+                technologies={["NextJS", "NodeJs"]}
+                imageUrl="/images/chatbot.png"
+                githubLink="https://github.com/MathScic/Chatbot"
+                siteLink="https://chatbot-git-main-mathscics-projects.vercel.app"
               />
             </div>
           </div>
