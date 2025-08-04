@@ -31,5 +31,13 @@
     "github": "https://github.com/MathScic/P8-Kasa",
     "technologies": ["React, NodeJS"],
     "description": "Ce projet avait pour but de nous apprendre à utiliser correctement React pour créer le site vitrine de l'agence de location Kasa. Coder avec React, Node et API rest"
+  },
+  {
+    "title": "Mon petit chatBot",
+    "image": "/images/chatbot.png",
+    "url": "https://chatbot-git-main-mathscics-projects.vercel.app",
+    "github": "https://github.com/MathScic/Chatbot",
+    "technologies": ["NextJS, NodeJS"],
+    "description": "Voici un projet de mini ChatBot, qui répond à des questions basiques. Coder avec NextJS et Node ainsi que l'API OpenAI"
   }
 ]
